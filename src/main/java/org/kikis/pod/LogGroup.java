@@ -12,7 +12,6 @@ public class LogGroup {
 
 	public LogGroup(final long N, final long T) {
 		loggerThread = new Thread(new Runnable() {
-			@Override
 			public void run() {
 				List<String> logs = new ArrayList<String>();
 				boolean interrumpted = false;
