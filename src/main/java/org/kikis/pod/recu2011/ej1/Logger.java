@@ -1,4 +1,4 @@
-package org.kikis.pod;
+package org.kikis.pod.recu2011.ej1;
 
 public class Logger {
 
@@ -10,14 +10,9 @@ public class Logger {
 
 	public void log(final String log) {
 		logGroup.add(log);
-		doLog(logGroup);
 	}
 
-	protected void doLog(final LogGroup logGroup) {
-		System.out.print(logGroup.doLog());
-	}
-
-	protected void finish() {
+	public void finish() {
 		logGroup.finish();
 	}
 }
